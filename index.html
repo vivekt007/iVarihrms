@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
+
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+        <img class="logo" src="media/images/Dark logo.png" alt="Logo">
+
+        <!-- <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </ul> -->
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="#news">Status</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">Team</button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="#">Confirmation</a>
+                    <a href="#">Seperation</a>
+                    <a href="#">other letters</a>
+                </div>
+            </div>
+            <a href="documents.html">Documents</a>
+            <a href="userProfile.html"><img src="media/images/profilePlaceholder.jpg" alt="Profile picture"></a>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="heroSection">
+            <div class="heroCol1">
+                <h1>Welcome to</h1>
+                <h1>iVari family</h1>
+            </div>
+            <div class="heroCol2">
+                <div class="heroUserDetails">
+                    <div class="heroUserDetailsRow1">
+                        <div class="heroUserDetailsR1Col1">
+                            <img src="media/images/profilePlaceholder.jpg" alt="">
+                        </div>
+                        <div class="heroUserDetailsR1Col2">
+                            <div class="heroDeatilsR1C2Row1">
+                                <h2>Employee name</h2>
+                                <p><span>employee id</span></p>
+                            </div>
+                            <div class="heroDeatilsR1C2Row2">
+                                <h3>Your Sales this month</h3>
+                                <p>58,204</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="userActions">
+
+            <div class="userActionsCol1">
+                Top scorer
+            </div>
+            <div class="userActionsCol2">
+                <div class="attendance" onclick="attendancePage()">
+                    <!-- <img src="media/icons/attendance.svg" alt=""> -->
+                    <h1>ATTENDANCE</h1>
+                    <p>Click to mark your attendance.</p>
+
+                </div>
+
+                <div class="leave" onclick="leavePage()">
+                    <!-- <img src="media/icons/attendance.svg" alt=""> -->
+                    <h1>LEAVE</h1>
+                    <p>Inform us about your leave.</p>
+                </div>
+
+                <div class="uploadSales">
+                    <!-- <img src="media/icons/attendance.svg" alt=""> -->
+                    <h1>UPLOAD SALES</h1>
+                    <p>Update about your sales.</p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

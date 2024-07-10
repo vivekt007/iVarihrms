@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="css/profile.css">
+    <script src="script.js"></script>
+
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html"><img src="media/icons/back-arrow-.svg" alt=""></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="profile-container">
+            <h1 class="cabin">Profile</h1>
+            <div class="profileRow1">
+                <div class="profileRow1Col1">
+                    <img src="media/images/profilePlaceholder.jpg" alt="">
+                </div>
+                <div class="profileRow1Col2">
+                    <h2><span>Employee name</span></h2>
+                    <p>Employee ID</p>
+                </div>
+            </div>
+
+            <form action="" class="profileRow2">
+                <div class="profileR2Rows profileR2Row1">
+                    <div class="profileR2R1Col1">
+                        <div class="inputContainer">
+                            <label for="name">Name</label>
+                            <input type="text" placeholder="Full name">
+                        </div>
+
+                    </div>
+                    <div class="profileR2R1Col2">
+                        <div class="inputContainer">
+                            <label for="location">Location</label>
+                            <input type="text" placeholder="Bengaluru,Karnataka">
+                        </div>
+                    </div>
+                </div>
+                <div class="profileR2Rows profileR2Row2">
+                    <div class="profileR2R2Col1">
+                        <div class="inputContainer">
+                            <label for="number">Mobile number</label>
+                            <input type="text" placeholder="8976543210">
+                        </div>
+
+                    </div>
+                    <div class="profileR2R2Col2">
+                        <div class="inputContainer">
+                            <label for="Email">Email address</label>
+                            <input type="email" placeholder="Email address">
+                        </div>
+                    </div>
+                </div>
+                <div class="profileR2Rows profileR2Row3">
+                    <div class="save">
+                        <input type="submit" value="Save changes">
+                    </div>
+                    <div class="changePassword">
+                        <a href="#">Change password</a>
+                    </div>
+                </div>
+            </form>
+
+            <div class="profileRow3"></div>
+        </div>
+    </main>
+
+</body>
+
+</html>

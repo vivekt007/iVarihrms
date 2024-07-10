@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance</title>
+    <link rel="stylesheet" href="css/attendance.css">
+    <script src="script.js"></script>
+
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html"><img src="media/icons/back-arrow-.svg" alt=""></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="attendanceCard">
+            <h1 class="cabin">ATTENDANCE</h1>
+
+            <p>25/07/2024</p>
+
+            <div class="attendanceCardRow1">
+                <form action="" class="punchIn">
+                    <div class="form1Row1 formRows">
+                        <img src="media/icons/PunchIn.svg" alt="">
+                        <label for="name">Mark your PunchIn</label>
+                    </div>
+                    <p>Time : <span>--:-- AM</span></p>
+                    <!-- <button onclick="punchIn()">PunchIn</button> -->
+                    <input type="submit" value="Punch In">
+                </form>
+                <form action="" class="punchOut">
+                    <div class="form2Row1 formRows">
+                        <img src="media/icons/PunchOut.svg" alt="">
+                        <label for="name">Mark your PunchOut</label>
+                    </div>
+                    <p>Time : <span>--:-- PM</span></p>
+                    <!-- <button onclick="punchIn()">PunchIn</button> -->
+                    <input type="submit" value="Punch Out">
+                </form>
+            </div>
+
+            <form action="" class="remark">
+                <textarea name="remarks" id="remarks" rows="3" placeholder="Remarks"></textarea>
+                <input type="submit" value="Give Remarks">
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

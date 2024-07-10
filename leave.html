@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leave</title>
+    <link rel="stylesheet" href="css/leave.css">
+    <script src="script.js"></script>
+
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html"><img src="media/icons/back-arrow-.svg" alt=""></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="leaveCard">
+            <h1 class="cabin">LEAVE</h1>
+            <div class="leaveCradRow1">
+                <div class="monthLeave">
+                    <p>01.5</p>
+                    <h3>Monthly</h3>
+                </div>
+                <div class="yearLeave">
+                    <p>15.5</p>
+                    <h3>Yearly</h3>
+                </div>
+            </div>
+
+            <div class="leaveCardRow2">
+                <form action="">
+                    <div class="formRow1 formRows">
+                        <div class="startDate">
+                            <label for="Start Date">Start Date</label>
+                            <input type="date" name="leaveStartDate" id="leaveStartDate" required>
+                        </div>
+                        <div class="endDate">
+                            <label for="End Date">End Date</label>
+                            <input type="date" name="leaveEndDate" id="leaveEndDate" required>
+                        </div>
+                    </div>
+                    <div class="formRow2 formRows">
+                        <div class="leavetype">
+                            <label for="Leave Type">Select Leave Type</label>
+                            <select class="formDropDown custom-select" name="leaveType" id="leaveType" required>
+                                <optgroup>
+                                    <option value="fullDay">Full Day</option>
+                                    <option value="halfDay">Half Day</option>
+                                    <option value="workFromHome">WFH</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="leaveCode">
+                            <label for="Leave Code">Select Leave Code</label>
+                            <select class="formDropDown custom-select" name="leaveCode" id="leaveCode" required>
+                                <optgroup>
+                                    <option value="PL">Personel leave</option>
+                                    <option value="SL">Sick leave</option>
+                                    <option value="CL">Casual leave</option>
+                                    <option value="SPL">Special leave</option>
+                                    <option value="unpaidLeave">Unpaid leave</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="formRow3 formRows">
+                        <textarea name="leaveReason" id="leaveReason" rows="3" placeholder="Reason for leave"></textarea>
+                    </div>
+                    <div class="formRow4 formRows">
+                        <div class="submitBtn">
+                            <input type="submit" value="Submit">
+                        </div>
+
+                        <div class="leaveApporoval">
+                            <p>Approval Pending</p>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>
