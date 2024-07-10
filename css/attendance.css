@@ -31,7 +31,7 @@
 }
 
 body {
-    background: url(/media/images/attendanceBg2.jpg);
+    background: url('../media/images/attendanceBg2.jpg');
     background-color: var(--dark-color);
     background-repeat: no-repeat;
     background-size: cover;

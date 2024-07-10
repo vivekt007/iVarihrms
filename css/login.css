@@ -31,7 +31,7 @@
 }
 
 body {
-    background: url(/media/images/LoginBG3.png);
+    background: url('../media/images/LoginBG3.png');
     background-color: var(--plane-color);
     background-repeat: no-repeat;
     background-size: cover;
