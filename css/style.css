@@ -27,8 +27,8 @@
 }
 
 body {
-    background: url(media/images/homePageBg.jpg);
-    /* background-color: var(--dark-color); */
+    background: url(../media/images/homePageBg.jpg);
+    background-color: var(--dark-color);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

@@ -32,7 +32,7 @@
 
 body {
     background: url(/media/images/userProfile.jpg);
-    /* background-color: var(--dark-color); */
+    background-color: var(--dark-color);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

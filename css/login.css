@@ -32,7 +32,7 @@
 
 body {
     background: url(/media/images/LoginBG3.png);
-    /* background-color: var(--dark-color); */
+    background-color: var(--plane-color);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
