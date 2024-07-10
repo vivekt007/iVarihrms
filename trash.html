@@ -7,215 +7,66 @@
     <title>Responsive Web Page</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* General Styles */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #000;
-            color: #fff;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 40px;
-            background-color: #000;
-        }
-
-        header .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        header nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-
-        header nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        header .signup a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        .hero {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 40px;
-        }
-
-        .hero .content {
-            max-width: 600px;
-        }
-
-        .hero .content h1 {
-            font-size: 48px;
-            line-height: 1.2;
-            margin: 0;
-        }
-
-        .hero .content .profiles img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            margin-right: 10px;
-        }
-
-        .hero .content p {
-            font-size: 18px;
-            margin: 10px 0;
-        }
-
-        .hero .content .video button,
-        .hero .content .services button {
-            background-color: #fff;
-            color: #000;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            margin-top: 10px;
-            cursor: pointer;
-        }
-
-        .hero .image {
+        .card {
+            width: 190px;
+            height: 254px;
+            background: #07182E;
             position: relative;
-        }
-
-        .hero .image img {
-            width: 400px;
-            border-radius: 10px;
-        }
-
-        .hero .image button {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: #fff;
-            color: #000;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        .details {
             display: flex;
-            justify-content: space-around;
-            padding: 40px;
+            place-content: center;
+            place-items: center;
+            overflow: hidden;
+            border-radius: 20px;
         }
 
-        .details .card {
-            width: 30%;
-            padding: 20px;
-            border-radius: 10px;
+        .card h2 {
+            z-index: 1;
+            color: white;
+            font-size: 2em;
         }
 
-        .details .card.orange {
-            background-color: #ff7f00;
+        .card::before {
+            content: '';
+            position: absolute;
+            width: 100px;
+            background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+            height: 130%;
+            animation: rotBGimg 3s linear infinite;
+            transition: all 0.2s linear;
         }
 
-        .details .card.gray {
-            background-color: #808080;
-        }
-
-        .details .card.yellow {
-            background-color: #ffcc00;
-        }
-
-        .details .card h2 {
-            margin: 0;
-            font-size: 24px;
-        }
-
-        .details .card p {
-            font-size: 48px;
-            margin: 10px 0 0 0;
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            .hero {
-                flex-direction: column;
-                align-items: flex-start;
+        @keyframes rotBGimg {
+            from {
+                transform: rotate(0deg);
             }
 
-            .hero .image {
-                margin-top: 20px;
-            }
-
-            .details {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .details .card {
-                width: 80%;
-                margin-bottom: 20px;
+            to {
+                transform: rotate(360deg);
             }
         }
+
+        .card::after {
+            content: '';
+            position: absolute;
+            background: #07182E;
+            ;
+            inset: 5px;
+            border-radius: 15px;
+        }
+
+        /* .card:hover:before {
+  background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+  animation: rotBGimg 3.5s linear infinite;
+} */
     </style>
 </head>
 
 <body>
-    <header>
-        <div class="logo">Coucher</div>
-        <nav>
-            <ul>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Cases</a></li>
-            </ul>
-        </nav>
-        <div class="signup"><a href="#">Sign Up</a></div>
-    </header>
 
-    <section class="hero">
-        <div class="content">
-            <h1>UNLIMITED <br> PRETENTIOUS <br> IDEAS</h1>
-            <div class="profiles">
-                <img src="profile1.jpg" alt="Profile 1">
-                <img src="profile2.jpg" alt="Profile 2">
-                <img src="profile3.jpg" alt="Profile 3">
-            </div>
-            <p>Our Solutions</p>
-            <p>We Provide the Full Funnel Approach</p>
-            <div class="video">
-                <button>Let's See How We Did It</button>
-            </div>
-            <div class="services">
-                <button>Web Analytics</button>
-                <button>Email Marketing</button>
-                <button>SEO 2.0</button>
-            </div>
-        </div>
-        <div class="image">
-            <img src="business_boost.jpg" alt="Your Business Boost">
-            <button>Book Demo Call</button>
-        </div>
-    </section>
+    <div class="card">
+        <h2>CARD</h2>
+    </div>
 
-    <section class="details">
-        <div class="card orange">
-            <h2>Unique Business Solutions</h2>
-        </div>
-        <div class="card gray">
-            <h2>Our Case Studies</h2>
-        </div>
-        <div class="card yellow">
-            <h2>Successful Projects</h2>
-            <p>700+</p>
-        </div>
-    </section>
 </body>
 
 </html>

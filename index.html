@@ -42,7 +42,16 @@
                     <a href="#">other letters</a>
                 </div>
             </div>
-            <a href="documents.html">Documents</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">Documents</button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="salarySlips.html">Salary slips</a>
+                    <a href="incentives.html">Incentives</a>
+                    <a href="#">Holidays</a>
+                    <a href="#">Insurance</a>
+                </div>
+            </div>
+            <!-- <a href="documents.html">Documents</a> -->
             <a href="userProfile.html"><img src="media/images/profilePlaceholder.jpg" alt="Profile picture"></a>
         </div>
     </nav>
@@ -62,7 +71,7 @@
                         </div>
                         <div class="heroUserDetailsR1Col2">
                             <div class="heroDeatilsR1C2Row1">
-                                <h2>Employee name</h2>
+                                <h2>Employee full name </h2>
                                 <p><span>employee id</span></p>
                             </div>
                             <div class="heroDeatilsR1C2Row2">
@@ -77,9 +86,17 @@
 
         <section class="userActions">
 
-            <div class="userActionsCol1">
-                Top scorer
+            <div class="userActionsCol1 topScorer card">
+                <div class="topScorerCol1">
+                    <img src="media/images/profilePlaceholder.jpg" alt="">
+                </div>
+                <div class="topScorerCol2">
+                    <h1 class="topscorerName">Darshan Shinde</h1>
+                    <p><span>5,60,450</span> This month</p>
+                    <p><span>Bengaluru, Karnataka</span></p>
+                </div>
             </div>
+
             <div class="userActionsCol2">
                 <div class="attendance" onclick="attendancePage()">
                     <!-- <img src="media/icons/attendance.svg" alt=""> -->
