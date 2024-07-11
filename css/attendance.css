@@ -170,3 +170,32 @@ input[type=submit]:hover {
     /* color: var(--dark-color); */
     transform: scale(0.9);
 }
+
+@media (max-width: 700px) {
+    .class {
+        display: block;
+        width: 100%;
+        padding: 0.5rem;
+        height: fit-content;
+        margin: 0.5rem;
+    }
+
+    .attendanceCard {
+        width: 100%;
+        margin: 0.5rem;
+        gap: 2rem;
+        padding: 0.5rem;
+    }
+
+    .attendanceCardRow1 {
+        gap: 2rem;
+    }
+
+    .formRows img{
+        width: 14px;
+    }
+
+    .formRows label {
+        font-size: 0.8rem;
+    }
+}
