@@ -255,3 +255,14 @@ textarea:focus,textarea:hover {
         transform: rotate(360deg);
     }
 }
+
+
+@media (max-width: 700px) {
+    .leaveCard{
+        width: 100%;
+        margin: 0.5rem;
+    }
+    textarea{
+        width: 100%;
+    }
+}
