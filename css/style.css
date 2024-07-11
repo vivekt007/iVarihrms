@@ -288,10 +288,10 @@ nav {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.18);
-    
+
 }
 
-.topScorerCol1{
+.topScorerCol1 {
     z-index: 1;
 }
 
@@ -357,7 +357,8 @@ nav {
 .card::after {
     content: '';
     position: absolute;
-    background: #07182E;;
+    background: #07182E;
+    ;
     inset: 5px;
     border-radius: 15px;
 }
@@ -445,13 +446,78 @@ nav {
     gap: 8px;
 }
 
-@media (max-width: 900px) {
-    .heroSection {
+@media (max-width: 700px) {
+
+    nav {
+        padding: 0.5rem;
+    }
+
+    .class,
+    .heroSection,
+    .heroCol1,
+    .heroCol2,
+    .heroUserDetails,
+    .userActions {
+        display: block;
+        width: 100%;
+        height: fit-content;
+        padding: 0.5rem;
+    }
+
+    .topScorer{
+        width: 100%;
+        /* margin: 0.5rem; */
+        gap: 1rem;
+    }
+
+    .topScorerCol2 h1{
+        font-size: 32px;
+    }
+
+    .heroCol1 h1 {
+        font-size: 60px;
+        padding-top: 2rem;
+    }
+
+    .userActionsCol2{
+        display: flex;
+        width: 100%;
+        gap: 0.5rem;
+        padding: 0.5rem;
+        flex-wrap: wrap;
+    }
+
+    .attendance,.uploadSales,.leave{
+        /* display: block; */
+        /* width: 7rem; */
+        width: 100%;
+        height: 5rem;
+    }
+
+    .attendance h1{
+        font-size: 20px;
+    }
+
+    .navbar a{
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+
+    .dropdown,.dropbtn{
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+
+    .logo{
+        width: 40px;
+    }
+
+    /* .heroSection {
         padding: 0rem 0.5rem;
         display: block;
     }
 
     .heroCol1 h1 {
         font-size: 32px;
-    }
+    } */
 }
