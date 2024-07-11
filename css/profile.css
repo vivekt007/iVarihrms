@@ -70,7 +70,7 @@ nav {
     -webkit-backdrop-filter: blur(4px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    /* width: 80%; */
+    /* width: 100%; */
     /* height: 80%; */
     padding: 2.5rem;
     display: flex;
@@ -180,6 +180,35 @@ nav {
     transform: scale(0.9);
 }
 
-.changePassword a:hover{
+.changePassword a:hover {
     color: var(--lightygrey-color);
+}
+
+
+@media (max-width: 700px) {
+    main {
+        margin: 2rem 0.5rem 0 0.5rem ;
+    }
+
+    .profile-container {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .profileR2Rows {
+        display: block;
+        width: 100%;
+        height: fit-content;
+        /* margin: 1rem 0; */
+        gap: 2rem;
+    }
+
+    .inputContainer {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .profileR2Row3{
+        display: flex;
+    }
 }
