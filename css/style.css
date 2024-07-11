@@ -369,6 +369,10 @@ nav {
     font-size: 16px;
 }
 
+.topScorerCol2 h3{
+    text-decoration: underline;
+}
+
 .userActionsCol2 {
     display: flex;
     width: 60%;
