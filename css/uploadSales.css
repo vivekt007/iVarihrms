@@ -153,10 +153,11 @@ form {
 
 @media (max-width: 700px) {
     
+
     main{
         width: 100%;
-        padding: 5rem 0.5rem 0 0.5rem;
-
+        padding: 8rem 0.5rem 0 0.5rem;
+        height: fit-content;
     }
     
     .newSalesUpdate {
