@@ -32,4 +32,4 @@ let slides = document.querySelector(".slides");
             showSlide(slideIndex);
         }
 
-        setInterval(nextSlide, 2000); // Change slide every 3 seconds  
+        setInterval(nextSlide, 2500); // Change slide every 3 seconds  

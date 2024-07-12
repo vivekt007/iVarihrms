@@ -388,6 +388,7 @@ nav {
 
 .slide {
     min-width: 100%;
+    min-height: 100%;
     box-sizing: border-box;
 }
 
@@ -494,8 +495,9 @@ nav {
 
     .topScorer{
         width: 100%;
+        height: fit-content;
         /* margin: 0.5rem; */
-        gap: 1rem;
+        /* gap: 1rem; */
     }
 
     .topScorerCol2 h1{
