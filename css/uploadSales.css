@@ -152,9 +152,13 @@ form {
 @media (max-width: 1600px) {}
 
 @media (max-width: 700px) {
+
+    nav {
+        padding: 1rem 0.5rem 0 0.5rem ;
+    }
     
     main{
-        margin-top: 8rem;
+        margin-top: 4rem;
         width: 100%;
         padding: 0 0.5rem;
         height: fit-content;
