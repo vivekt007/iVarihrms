@@ -171,6 +171,13 @@ input[type=submit]:hover {
     transform: scale(0.9);
 }
 
+
+@media (max-width: 1600px) {
+    .formRows label {
+        font-size: 1rem;
+    }
+}
+
 @media (max-width: 700px) {
     .class {
         display: block;

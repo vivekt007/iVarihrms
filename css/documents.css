@@ -184,10 +184,16 @@ form option {
 }
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
 
     main{
         height: fit-content;
+    }
+
+    .docs{
+        width: 100%;
+        height: 90%;
+        margin: 0.5rem;
     }
     
     .documents-container {
