@@ -33,7 +33,14 @@
 
                 <div class="input-container">
                     <label for="companyName">Company Name</label>
-                    <input type="text" name="companyName" id="companyName" placeholder="Enter company Name">
+                    <input type="text" name="companyName" id="companyName" list="companyNames" placeholder="Enter company Name">
+                    <datalist id="companyNames">
+                        <option value="Company 1">
+                        <option value="Company 2">
+                        <option value="Company 3">
+                        <option value="Company 4">
+                        <option value="Company 5">
+                    </datalist>
                 </div>
 
                 <div class="input-container">
@@ -50,7 +57,7 @@
                     <label for="companyName">Total Order Value</label>
                     <input type="number" name="orderValue" id="orderValue" placeholder="Enter Total Order value">
                 </div>
-                
+
                 <div class="input-container">
                     <label for="companyName">Upload Purchase Order</label>
                     <input type="file" name="purchaseOrder" id="purchaseOrder" accept=".png, .jpg, .jpeg, .pdf">
