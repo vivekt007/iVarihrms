@@ -475,7 +475,7 @@ nav {
     gap: 8px;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1600px) {
     .heroCol1 h1 {
         font-size: 100px;
         padding-top: 1rem;
