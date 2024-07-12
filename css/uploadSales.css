@@ -118,13 +118,13 @@ form {
     color: var(--plane-color);
 }
 
-.btns{
+.btns {
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
 
-.btns input{
+.btns input {
     border: 1px solid transparent;
     outline: none;
     padding: 8px 16px;
@@ -133,7 +133,7 @@ form {
     transition: 0.3s;
 }
 
-.btns input[type=submit]{
+.btns input[type=submit] {
     background-color: var(--dark-color);
 }
 
@@ -149,22 +149,28 @@ form {
 
 /* responsive css */
 
-@media (max-width: 1600px) {}
+@media (max-width: 1500px) {
+    main {
+        margin-top: 5rem;
+        height: fit-content;
+        overflow: scroll;
+    }
+}
 
 @media (max-width: 700px) {
 
     nav {
-        padding: 1rem 0.5rem 0 0.5rem ;
+        padding: 1rem 0.5rem 0 0.5rem;
     }
-    
-    main{
+
+    main {
         margin-top: 4rem;
         width: 100%;
         padding: 0 0.5rem;
         height: fit-content;
         overflow: scroll;
     }
-    
+
     .newSalesUpdate {
         width: 100%;
         padding: 1rem;
