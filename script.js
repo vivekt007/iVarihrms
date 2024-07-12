@@ -20,6 +20,10 @@ function leavePage() {
     location.replace("leave.html")
 }
 
+function uploadSales(){
+    location.replace("uploadSales.html")
+}
+
 let slides = document.querySelector(".slides");
         let slideIndex = 0;
 

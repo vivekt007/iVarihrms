@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Sales</title>
+    <link rel="stylesheet" href="css/uploadSales.css">
+    <script src="script.js"></script>
+
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html"><img src="media/icons/back-arrow-.svg" alt=""></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="newSalesUpdate">
+            <form action="">
+                <h1 class="cabin">Upload New Sales</h1>
+
+                <div class="input-container">
+                    <label for="companyName">Company Name</label>
+                    <input type="text" name="companyName" id="companyName" placeholder="Enter company Name">
+                </div>
+
+                <div class="input-container">
+                    <label for="companyAddress">Company Address</label>
+                    <input type="text" name="companyAddress" id="companyAddress" placeholder="Enter company Address">
+                </div>
+
+                <div class="input-container">
+                    <label for="newCompanyGST">Company GST Number</label>
+                    <input type="text" name="newCompanyGST" id="newCompanyGST" placeholder="Enter company GST">
+                </div>
+
+                <div class="input-container">
+                    <label for="companyName">Total Order Value</label>
+                    <input type="number" name="orderValue" id="orderValue" placeholder="Enter Total Order value">
+                </div>
+                
+                <div class="input-container">
+                    <label for="companyName">Upload Purchase Order</label>
+                    <input type="file" name="purchaseOrder" id="purchaseOrder" accept=".png, .jpg, .jpeg, .pdf">
+                </div>
+
+                <div class="input-container">
+                    <label for="taxableValue">Total Taxable Value</label>
+                    <p class="taxableValue"><span>0</span>/- Rupees</p>
+                </div>
+
+                <div class="btns">
+                    <input type="submit" value="Submit">
+                    <input type="button" value="Cancel">
+                </div>
+
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
