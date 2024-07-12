@@ -364,13 +364,37 @@ nav {
 }
 
 /* test close */
-
+/* 
 .topScorerCol2 p {
     font-size: 16px;
 }
 
 .topScorerCol2 h3{
     text-decoration: underline;
+} */
+
+.carousel {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .userActionsCol2 {
