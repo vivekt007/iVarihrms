@@ -193,7 +193,7 @@ form option {
     .docs{
         width: 100%;
         height: 90%;
-        margin: 0.5rem;
+        /* margin: 0.5rem; */
     }
     
     .documents-container {
