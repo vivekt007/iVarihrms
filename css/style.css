@@ -344,16 +344,6 @@ nav {
     transition: all 0.2s linear;
 }
 
-@keyframes rotBGimg {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
 .card::after {
     content: '';
     position: absolute;
