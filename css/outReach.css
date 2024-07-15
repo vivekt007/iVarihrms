@@ -30,8 +30,13 @@
     font-family: Cabin;
 }
 
+.horizontal-line{
+    width: 100%;
+    border-bottom: 1px solid var(--lightygrey-color) ;
+}
+
 body {
-    background: url('../media/images/HelpBg1.jpg');
+    background: url('../media/images/outreachBg.jpg');
     background-color: var(--dark-color);
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,11 +44,12 @@ body {
 }
 
 main {
-    height: 100dvh;
+    height: fit-content;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 5rem 0;
 }
 
 nav {
@@ -94,6 +100,13 @@ form {
     color: #ffffff90;
 }
 
+.outReachRow1,.outReachRow2,.outReachRow3{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+}
+
 .input-container {
     display: flex;
     flex-direction: column;
@@ -116,6 +129,12 @@ form {
     border: 1px solid rgba(255, 255, 255, 0.18);
     outline: none;
     width: 100%;
+}
+
+input::placeholder, textarea::placeholder{
+    color: #8d8c8c;
+    width: 100%;
+    font-size: 14px;
 }
 
 .input-container input:focus,

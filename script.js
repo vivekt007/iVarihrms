@@ -24,6 +24,10 @@ function uploadSales(){
     location.replace("uploadSales.html")
 }
 
+function outReach(){
+    location.replace("outReach.html")
+}
+
 let slides = document.querySelector(".slides");
         let slideIndex = 0;
 
