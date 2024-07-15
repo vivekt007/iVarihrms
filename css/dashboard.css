@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+    color: var(--textcolor);
+    font-family: 'Overpass';
+}
+
+:root {
+    --primary-color: #FF2626;
+    --darkRed-color: #BD1616;
+    --accent2-color: #FFE6E6;
+    --accent3-color: #9AC8CD;
+    --secondary-tint: #F3F8FF;
+    --dark-color: #050000;
+    --negative-color: #FF4E4E;
+    --darkgrey-color: #444444;
+    --lightygrey-color: #D9D9D9;
+    --textfieldgray-color: #F5F5F5;
+    --plane-color: #ffffff;
+    --border-shadow: rgba(23, 26, 31, 0.252);
+    --font-family: 'Epilogue', sans-serif;
+}
+
+.cabin {
+    font-family: Cabin;
+}
+
+body {
+    background: url('../media/images/Free\ Sign\ on\ Building\ Mockup.png');
+    background-color: var(--dark-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--plane-color);
+}
+
+nav {
+    /* background-color: #ffffff05; */
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    color: var(--dark-color);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+nav img{
+    width: 50px;
+}
+
+
+
+/* responsive css */
+
+@media (max-width: 1500px) {
+    main {
+        margin-top: 5rem;
+        height: fit-content;
+        overflow: scroll;
+    }
+}
+
+@media (max-width: 700px) {
+
+    nav {
+        padding: 1rem 0.5rem 0 0.5rem;
+    }
+
+    main {
+        margin-top: 4rem;
+        width: 100%;
+        padding: 0 0.5rem;
+        height: fit-content;
+        overflow: scroll;
+    }
+
+    .newSalesUpdate {
+        width: 100%;
+        padding: 1rem;
+    }
+}

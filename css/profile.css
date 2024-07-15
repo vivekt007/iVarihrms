@@ -80,8 +80,34 @@ nav {
     gap: 1rem;
 }
 
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .profile-container>h1 {
     font-size: 48px;
+}
+
+.heading button{
+    border: 1px solid transparent;
+    background: transparent;
+    outline: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: 0.3s;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.heading>button>img{
+    width: 18px;
 }
 
 .profileRow1 {
@@ -203,7 +229,7 @@ nav {
     main {
         margin: 5rem 0.5rem 2rem 0.5rem;
         height: fit-content;
-        overflow: scroll;
+        /* overflow: scroll; */
     }
 
     .profile-container {
