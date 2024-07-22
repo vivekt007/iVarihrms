@@ -64,15 +64,12 @@ main {
     flex-direction: column;
     padding: 4rem 2rem 1rem 2rem;
     gap: 1rem;
+    overflow: scroll;
 }
 
 .statusRow1,
 .statusRow2 {
     width: 100%;
-}
-
-.statusRow2{
-
 }
 
 .tab {
@@ -91,20 +88,154 @@ main {
     font-size: 17px;
 }
 
-/* Change background color of buttons on hover */
 .tab button:hover {
     border-bottom: 1px solid var(--plane-color);
 }
 
-/* Create an active/current tablink class */
 .tab button.active {
     border-bottom: 1px solid var(--plane-color);
 }
 
-/* Style the tab content */
+.salesCardsContainer,
+.outReachConatiner {
+    width: 100%;
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    height: 100%;
+    width: 100%;
+}
+
 .tabcontent {
     display: none;
-    padding: 6px 12px;
-    /* border: 1px solid #ccc; */
+    /* padding: 1rem; */
+    width: fit-content;
     border-top: none;
+}
+
+.salesCard,
+.outReachCard {
+    width: fit-content;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.salesCard:hover {
+    box-shadow: 0 8px 32px 0 rgba(100, 101, 115, 0.37);
+    border: 1px solid transparent;
+}
+
+.salesCardRow1,
+.outReachRow1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.salesCardRow1 button,
+.outReachRow1 button {
+    background-color: transparent;
+    border: none;
+    transition: 0.3s;
+}
+
+.salesCardRow1 button:hover {
+    transform: scale(1.2);
+}
+
+.salesCardRow1 h3, .outReachRow1 h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.salesCardRow1 button img, .outReachRow1 button img {
+    width: 20px;
+}
+
+.salesCardRow2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+}
+
+.salesCardRow2 img {
+    width: 14px;
+}
+
+.salesCardRow2 span {
+    font-size: 16px;
+    line-height: 100%;
+    height: 16px;
+}
+
+.salesCardRow3 span {
+    font-size: 32px;
+}
+
+.salesCardRow3 {
+    font-size: 14px;
+}
+
+.salesCardRow4 {
+    font-size: 12px;
+    color: #ffffffba;
+}
+
+.salesCardRow5 {
+    font-weight: 600;
+}
+
+.approved {
+    color: #35bd16;
+}
+
+.rejected {
+    color: var(--negative-color);
+}
+
+.outReachCard:hover{
+    box-shadow: 0 8px 32px 0 rgba(100, 101, 115, 0.37);
+    border: 1px solid transparent;
+}
+
+.outReachRow1 button:hover{
+    transform: scale(1.2);
+}
+
+.outReachRow3 {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.outReachRow3 img {
+    width: 16px;
+}
+
+.companyLocation,
+.contactNumber {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    /* width: 100%; */
+}
+
+.outReachRow4 {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.outReachRow4 img {
+    width: 16px;
 }
