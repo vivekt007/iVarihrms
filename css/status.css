@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+    color: var(--textcolor);
+    font-family: 'Overpass';
+}
+
+:root {
+    --primary-color: #FF2626;
+    --darkRed-color: #BD1616;
+    --accent2-color: #FFE6E6;
+    --accent3-color: #9AC8CD;
+    --secondary-tint: #F3F8FF;
+    --dark-color: #050000;
+    --negative-color: #FF4E4E;
+    --darkgrey-color: #444444;
+    --lightygrey-color: #D9D9D9;
+    --textfieldgray-color: #F5F5F5;
+    --plane-color: #ffffff;
+    --border-shadow: rgba(23, 26, 31, 0.252);
+    --font-family: 'Epilogue', sans-serif;
+}
+
+.cabin {
+    font-family: Cabin;
+}
+
+body {
+    background: url('../media/images/sales.jpg');
+    background-color: var(--dark-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    /* background-color: #ffffff05; */
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    color: var(--dark-color);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+main {
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--plane-color);
+    flex-direction: column;
+    padding: 4rem 2rem 1rem 2rem;
+    gap: 1rem;
+}
+
+.statusRow1,
+.statusRow2 {
+    width: 100%;
+}
+
+.statusRow2{
+
+}
+
+.tab {
+    overflow: hidden;
+    display: flex;
+    gap: 2rem;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    border-bottom: 1px solid var(--plane-color);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    border-bottom: 1px solid var(--plane-color);
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    /* border: 1px solid #ccc; */
+    border-top: none;
+}

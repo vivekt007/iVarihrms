@@ -115,7 +115,7 @@ form label{
     justify-content: center;
     border-radius: 4px;
     background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(89, 90, 103, 0.37);
+    box-shadow: 0 8px 32px 0 rgba(89, 90, 103, 0.10);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border: 1px solid rgba(255, 255, 255, 0.18);

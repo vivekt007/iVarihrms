@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status</title>
+    <link rel="stylesheet" href="css/status.css">
+    <script defer src="script.js"></script>
+
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html"><img src="media/icons/back-arrow-.svg" alt=""></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="statusRow1">
+            <h1 class="cabin">Your sales status</h1>
+        </div>
+
+        <div class="statusRow2">
+            <div class="tab">
+                <button class="tablinks" onclick="opentabs(event, 'salesUploads')" id="defaultOpen">Sales</button>
+                <button class="tablinks" onclick="opentabs(event, 'outReach')">Outreach</button>
+            </div>
+
+            <div id="salesUploads" class="tabcontent">
+                <h3>Sales</h3>
+                <p>salesUploads is the capital city of England.</p>
+            </div>
+
+            <div id="outReach" class="tabcontent">
+                <h3>Outreach</h3>
+                <p>outReach is the capital of France.</p>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
